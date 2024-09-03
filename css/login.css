@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url("../img/background-login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #f7f3f3;
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+}
+
+.container > a {
+    width: 150px;
+    display: flex;
+    aspect-ratio: 3/2;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.container > a:hover {
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    transform: translateY(-2px);
+}
+
+.container > a > div {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.box-2 {
+    background: linear-gradient(135deg, #17a2b8, #0d6efd);
+    color: white;
+    border: 2px solid #17a2b8;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.box-2:hover {
+    background: linear-gradient(135deg, rgba(23, 162, 249, 0.7), rgba(23, 162, 249, 0.5));
+    color: #17a2b8;
+    transform: scale(1.05);
+}

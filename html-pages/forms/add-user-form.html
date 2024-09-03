@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/form.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2 class="text-center mb-3">Add User</h2>
+        <form id="userForm" novalidate>
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="name" placeholder="Enter full name" required>
+                <label for="name">Name</label>
+                <div class="invalid-feedback">
+                    Please enter a name.
+                </div>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="designation" placeholder="Enter designation" required>
+                <label for="designation">Designation</label>
+                <div class="invalid-feedback">
+                    Please enter a designation.
+                </div>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                <label for="username">Username</label>
+                <div class="invalid-feedback">
+                    Please enter a username.
+                </div>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                <label for="password">Password</label>
+                <div class="invalid-feedback">
+                    Please enter a password.
+                </div>
+            </div>
+            <div class="form-floating mb-2">
+                <select class="form-select" id="accountType" required>
+                    <option value="" disabled selected>Select account type</option>
+                    <option value="Executive">Executive</option>
+                    <option value="User">General</option>
+                </select>
+                <label for="accountType">Account Type</label>
+                <div class="invalid-feedback">
+                    Please select an account type.
+                </div>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="file" class="form-control" id="imageUpload" placeholder="Upload profile image" accept="image/*" required>
+                <label for="imageUpload">Profile Image</label>
+                <div class="invalid-feedback">
+                    Please select an image file.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Add</button>
+        </form>
+    </div>
+
+    <script src="../../js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

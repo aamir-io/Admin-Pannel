@@ -1,0 +1,58 @@
+/* Add User Section Styles */
+.add-user-section {
+  display: flex;
+  align-items: center;
+  gap: 50px; 
+  margin-bottom: 10px;
+}
+
+.add-user-text {
+  font-size: 20px; 
+  color: #495057; 
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* Add User Button Styles */
+.add-user-btn {
+  background-color: #007bffd8; 
+  color: white; 
+  padding: 4px 8px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.add-user-btn:hover {
+  background-color: #0056b3; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.add-user-btn:active {
+  background-color: #004085; 
+  box-shadow: none; 
+}
+
+/* Primary Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: 100px;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #004494);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
